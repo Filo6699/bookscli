@@ -115,4 +115,8 @@ def edit_book() -> None:
     if not book:
         print(f"{Format.YELLOW}{Format.REVERSE} Book doesn't exist {Format.RESET}")
         return
-    book.status = input("New status (в наличии/выдана): ").strip()
+    try:
+        book.status = input("New status (в наличии/выдана): ").strip()
+    except ValueError:
+        print(f"{Format.RED}{Format.REVERSE} Invalid status {Format.RESET}")
+        return
