@@ -9,6 +9,8 @@ class Format:
     UNDERLINE = "\033[4m"
     REVERSE = "\033[7m"
 
+    CLEAR = "\033[2J\033[H"
+
     BLACK = "\033[30m"
     RED = "\033[31m"
     GREEN = "\033[32m"

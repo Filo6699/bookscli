@@ -12,5 +12,5 @@ class Command:
         self.description: Optional[str] = description
         self._func = func
 
-    def execute(self, args: List[str]):
-        self._func(args)
+    def execute(self):
+        self._func()
